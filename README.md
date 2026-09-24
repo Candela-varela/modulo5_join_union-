@@ -1,0 +1,4 @@
+1. La consulta UNION devuelve 10 filas, mientras que la de UNION ALL devuelve 14. La diferencia esta en que los siguientes productos: Webcam HD 1080p - Monitor 4k 27'' - Teclado mecánico - SSD Externo 1TB se encuentran en ambas tablas. Al utilizar UNION se quitan los duplicados, y estos campos desaparecen simplificando la tabla.
+2. Porque UNION realiza la operación adicional de quitar duplicados y eso consume mas recursos.
+3. Por ejemplo, si tengo una tabla de sueldos por mes y por empleados, puedo utilizar UNION si quiero saber la totalidad de empleados y sus remuneraciones totales en el año, pero puedo usar UNION ALL si quiero el detalle de la remuneración por liquidación mensual. 
+4. Si las columnas de ambas consultas no coinciden en número o tipo el sistema marca error: All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.
